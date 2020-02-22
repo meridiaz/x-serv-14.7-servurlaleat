@@ -6,7 +6,7 @@ class urlsAleat(webapp.webApp):
     def process(self, parsedRequest):
         aleat = random.randint(0,1000)
         return ("200 OK", "<html><body><h1>Hello World!</h1>" +
-                            "<p><a href='"+ bytes(str(aleat), 'utf-8') +
+                            "<p><a href='"+ str(aleat) +
                             "'>Dame otra</a>" +
                             "</p>" +
                             "</body></html>")
